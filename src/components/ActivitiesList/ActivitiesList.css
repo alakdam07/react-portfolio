@@ -1,0 +1,101 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.ActivitiesList {
+  height: 40vh;
+  width: 100%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  
+  margin: auto;
+  }
+
+
+
+.ActivitiesList .grid-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+
+@media (min-width: 52em) {
+  .ActivitiesList .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  }
+}
+
+  .ActivitiesList .our-activities {
+  background-color: #001F33;
+  padding: 5em 0;
+  color: rgba(248, 248, 248, 0.6);
+}
+
+   .ActivitiesList .activities-description {
+  grid-column: span 2;
+}
+
+
+@media (min-width: 52em) {
+  .ActivitiesList  .activities-description {
+    grid-column: auto;
+    grid-row: span 2;
+    align-self: center;
+  }
+}
+
+  .ActivitiesList h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3rem;
+  color: #f8f8f8;
+  margin-top: 0;
+  line-height: 1;
+}
+
+  .ActivitiesList .activities-title span {
+  display: block;
+  font-weight: 900;
+}
+
+  .ActivitiesList .activities-member {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+   .ActivitiesList .activities-member img {
+  width: 100%;
+  display: block;
+}
+
+
+
+   .ActivitiesList .activities-member figcaption {
+  position: absolute;
+  top: 1em;
+  bottom: 1em;
+  right: 1em;
+  left: 1em;
+  background: rgba(11, 32, 39, 0.8);
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 300ms;
+}
+  .ActivitiesList .activities-member:hover figcaption {
+  opacity: 1;
+  transition: .3s;
+}
+
+  .ActivitiesList .activities-member .name {
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+}

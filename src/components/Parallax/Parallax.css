@@ -1,0 +1,71 @@
+
+
+
+  
+ 
+  /*Main*/
+  .image1, .image3,.image2 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .image1{
+    background-image: url('./img/image1.png');
+    min-height: 800px;
+    width: 100%;
+  }
+  
+  .image2{
+    background-image: url('./img/beat.png');
+    min-height: 800px;
+    width: 100%;
+  }
+  
+  .image3 {
+    background-image: url('./img/weather.png');
+    min-height: 800px;
+    width: 100%;
+  }
+  
+  /*section*/
+  .section {
+    text-align: center;
+    padding: 50px 80px;
+  }
+  
+  .section-light {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    color: #ddd;
+  }
+  
+  .section-dark {
+    background-color: #283e34;
+    color: #ddd;
+  }
+  
+  .ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+  }
+  
+  .ptext .border {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .border:hover {
+    transition: .5s;
+    box-shadow: 5px 5px 18px rgb(67, 238, 32);
+  }
+  

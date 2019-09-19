@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+body {
+  overflow-x: hidden;
+}
+  .Home {
+  background-color: #001F33;
+  height: 100%;
+  color: white;
+}
